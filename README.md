@@ -192,6 +192,27 @@ docker compose up --build
 docker compose -f docker-compose.yaml  -f docker-compose.dev.yaml
 ```
 
+### Docker Push
+
+* Login through CLI
+
+```bash
+docker login
+```
+
+* Assign tag for the image (new image name will be visible as docker image name)
+  eg. ishthumber343/hello-node
+
+```bash
+docker tag <image_name> <dockerHub_username>/<new_image_name>
+```
+
+* Then push the Docker Image
+
+```bash
+docker push <dockerHub_username>/<new_image_name>
+```
+
 ### Tips and Short hands
 
 - Run the command with the container creation
