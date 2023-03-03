@@ -1,0 +1,12 @@
+start the docker desktop
+
+kubectl apply -f deployment.yml
+
+kubectl get pods -o wide // you'll get IP add of pods
+
+curl <<IP>>
+
+
+
+this deployment file uses ishthumber/hello-node (from dockerhub)
+if not found then use <docker pull ishthumber/hello-node>
